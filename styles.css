@@ -1,0 +1,685 @@
+:root {
+    --primary-red: #FF0000;
+    --dark-red: #CC0000;
+    --white: #FFFFFF;
+    --black: #3d3d3d;
+    --gray: #444444;
+    --light-gray: #F5F5F5;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--white);
+}
+
+/* Header */
+header {
+
+    background-color: var(--primary-red);
+
+   
+    
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+.nav-links li {
+    margin: 0 10px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+}
+.logo {
+    height: 50px;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #333;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    color: var(--white);
+    text-align: center;
+    padding: 100px 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero .container {
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    margin-left: 45px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-left: 45px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-left: 45px;
+    border-radius: 25PX;
+}
+
+.primary-btn {
+    background-color: var(--primary-red);
+    color: var(--white);
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border-radius: 25PX;
+}
+
+.primary-btn:hover {
+    background-color: var(--dark-red);
+}
+
+.secondary-btn {
+    background-color: #FFD700;
+    color: var(--black);
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    border-radius: 25PX;
+}
+
+.secondary-btn:hover {
+    background-color: #FFC107;
+}
+
+/* Campaign Objective */
+.campaign-objective,
+.campaign-statistics,
+.road-safety-tips,
+.safety-pledge,
+.map-impact,
+.testimonials {
+    padding: 40px 20px;
+    background-color: var(--light-gray);
+}
+
+.campaign-statistics {
+    background-color: #ff0000;
+}
+
+.campaign-objective {
+    padding-left: 45px;
+}
+
+.brand-commitment {
+    padding: 40px 20px;
+    background-color: red;
+    display: flex;
+}
+
+.map-impact{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 45PX;
+    margin-right: 45PX;
+}
+@media (max-width: 480px) {
+    .map-impact {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.brand-commitment h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: white;
+    text-align: left;
+    margin-left: 45px;
+}
+
+.campaign-objective h2,
+.road-safety-tips h2,
+.safety-pledge h2,
+.map-impact h2,
+.testimonials h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.campaign-statistics h2 {
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    color: white;
+    text-align: left;
+    margin-left: 45px;
+}
+
+.objective-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.objective-text ul {
+    list-style: none;
+}
+
+.objective-text li {
+    margin-bottom: 20px;
+    padding-left: 30px;
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.objective-text li:before {
+    content: "•";
+    color: var(--primary-red);
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+}
+
+.objective-image img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stats-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    max-width: 2480px;
+    margin: 0, 10;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 15px;
+    background-color: #ff0000;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stats-image img {
+    width: 280px;
+    margin-left: 100px;
+}
+
+.stats-text {
+    text-align: center;
+    margin-left: 10px;
+    color: white;
+}
+
+.stats-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.stats-btn {
+    background-color: white;
+    color: red;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-right: 1000px;
+    width: 100px;
+}
+
+.commitment-content img {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.pause-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.pause-item {
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    min-height: 200px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pause-item span {
+    font-size: 5rem;
+    color: var(--primary-red);
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.pause-item p {
+    font-size: 1.1rem;
+    color: var(--gray);
+    text-align: center;
+}
+
+.pledge-content {
+    max-width: 800px;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+}
+
+.pledge-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.pledge-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    line-height: 1.8;
+    align-items: center;
+    justify-content: center;
+}
+
+.pledge-btn {
+    background-color: var(--white);
+    color: var(--primary-red);
+    border: none;
+}
+
+.map-container img {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.testimonial {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.testimonial-author span {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+    background: red;
+    padding: 20px;
+    text-align: center;
+}
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+.logo-section img {
+    height: 50px;
+}
+.footer-nav {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+.footer-nav li {
+    display: inline;
+}
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+}
+.newsletter p {
+    margin: 0 0 10px;
+}
+.subscribe {
+    display: flex;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.subscribe input {
+    border: none;
+    padding: 10px;
+    flex: 1;
+    outline: none;
+}
+.subscribe button {
+    background: yellow;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.legal-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+}
+.legal-links a {
+    color: white;
+    text-decoration: none;
+}
+.copyright {
+    margin: 0;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .hero {
+        padding: 80px 10px;
+    }
+
+    .pause-item {
+        width: calc(50% - 10px);
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .stats-container {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stats-container img {
+        margin-left: 50px;
+    }
+
+    -stats-text {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 5px;
+    }
+
+    .hero {
+        padding: 60px 5px;
+    }
+
+    .pause-item {
+        width: 100%;
+    }
+
+    .footer-buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Media query for tablets and larger phones */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .campaign-statistics, .campaign-objective, .brand-commitment {
+        padding: 20px 10px;
+    }
+
+    .stats-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 50px;
+    }
+
+    .stats-text {
+        margin-left: 0;
+    }
+
+    .stats-btn {
+        margin-right: 0;
+        width: auto;
+    }
+}
+
+/* Media query for phones */
+@media (max-width: 480px) {
+    .logo {
+        height: 30px;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .objective-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .commitment-content img, .stats-image img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Responsive layout for pause-container */
+@media (max-width: 768px) {
+    .pause-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        padding: 0 15px;
+    }
+
+    .pause-item {
+        width: 100%;
+        min-height: 180px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pause-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .pause-item {
+        min-height: 150px;
+        padding: 12px;
+    }
+}
+
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--white);
+}
+
+.hamburger.active::before {
+    content: '✖'; /* X icon */
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: var(--primary-red);
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+nav.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+section.safety-pledge {
+    background-image: url('truck.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100VH;
+}

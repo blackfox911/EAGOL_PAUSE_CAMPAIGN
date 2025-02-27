@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Century+Gothic:wght@400;700&display=swap');
+
 :root {
     --primary-red: #FF0000;
     --dark-red: #CC0000;
@@ -16,7 +18,7 @@
 
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Century Gothic', sans-serif;
     line-height: 1.6;
     background-color: var(--white);
 }
@@ -29,6 +31,13 @@ header {
    
     
     
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Century Gothic', Arial, sans-serif;
+}
+
+button {
+    font-family: 'Century Gothic', Arial, sans-serif;
 }
 
 .navbar {
@@ -156,7 +165,6 @@ header {
 .campaign-objective,
 .campaign-statistics,
 .road-safety-tips,
-.safety-pledge,
 .map-impact,
 .testimonials {
     padding: 40px 20px;
@@ -200,7 +208,6 @@ header {
 
 .campaign-objective h2,
 .road-safety-tips h2,
-.safety-pledge h2,
 .map-impact h2,
 .testimonials h2 {
     margin-bottom: 40px;
@@ -682,4 +689,82 @@ section.safety-pledge {
     background-position: center;
     background-repeat: no-repeat;
     height: 100VH;
+    display: flex;
+    justify-content:  center;
+    align-items: center ;
+}
+.safety-pledge {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 100%;
+    margin: 50px auto;
+    text-align: center;
+    
+}
+
+.safety-pledge h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.safety-pledge p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.safety-pledge .btn {
+    background-color: #FF0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.safety-pledge .btn:hover {
+    background-color: #CC0000;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .safety-pledge {
+        padding: 15px;
+        margin: 30px 10px;
+    }
+
+    .safety-pledge h2 {
+        font-size: 1.5rem;
+    }
+
+    .safety-pledge p {
+        font-size: 0.9rem;
+    }
+
+    .safety-pledge .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .safety-pledge {
+        padding: 10px;
+        margin: 20px 5px;
+    }
+
+    .safety-pledge h2 {
+        font-size: 1.2rem;
+    }
+
+    .safety-pledge p {
+        font-size: 0.8rem;
+    }
+
+    .safety-pledge .btn {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
 }

@@ -174,6 +174,25 @@ button {
 .campaign-statistics {
     background-color: #ff0000;
 }
+.campaign-statistics .stats-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: row; /* Default direction */
+    gap: 20px; /* Space between elements */
+}
+
+@media (max-width: 768px) {
+    .campaign-statistics .stats-container {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        text-align: center; /* Center text */
+    }
+
+    .campaign-statistics .stats-image,
+    .campaign-statistics .stats-text {
+        max-width: 100%; /* Ensure full width on smaller screens */
+    }
+}
 
 .campaign-objective {
     padding-left: 45px;

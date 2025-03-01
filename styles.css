@@ -163,6 +163,7 @@ button {
 
 /* Campaign Objective */
 .campaign-objective,
+
 .road-safety-tips,
 .map-impact,
 .testimonials {
@@ -185,6 +186,7 @@ button {
     .campaign-statistics .stats-container {
         flex-direction: column; /* Stack elements vertically on smaller screens */
         text-align: center; /* Center text */
+        padding-left: 20px;
     }
 
     .campaign-statistics .stats-image,

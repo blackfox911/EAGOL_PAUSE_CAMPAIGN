@@ -187,7 +187,6 @@ button {
         flex-direction: column; /* Stack elements vertically on smaller screens */
         text-align: center; /* Center text */
         padding-left: 20px;
-        padding-right: 20px;
     }
 
     .campaign-statistics .stats-image,
@@ -283,7 +282,7 @@ button {
     justify-content: space-between;
     gap: 60px;
     max-width: 2480px;
-    margin: 0, ;
+    margin: 0, 10;
     background: var(--white);
     padding: 40px;
     border-radius: 15px;
@@ -527,12 +526,10 @@ button {
         text-align: center;
         justify-content: center;
         align-items: center;
-        padding-left: 20px;
-        padding-right: 20px;
     }
 
     .stats-container img {
-        align-items: center;
+        margin-left: 50px;
     }
 
     -stats-text {
@@ -591,16 +588,14 @@ button {
     }
 
     .campaign-statistics, .campaign-objective, .brand-commitment {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 20px 10px;
     }
 
     .stats-container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-right: 20px;
-        margin-left: 10px;
+        margin-right: 50px;
     }
 
     .stats-text {

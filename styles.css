@@ -173,6 +173,7 @@ button {
 
 .campaign-statistics {
     background-color: #ff0000;
+    margin-bottom: 20px;
 }
 .campaign-statistics .stats-container {
     display: flex;

@@ -595,7 +595,8 @@ button {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-right: 50px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     .stats-text {

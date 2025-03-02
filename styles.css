@@ -181,7 +181,6 @@ button {
     align-items: center; /* Center vertically */
     flex-direction: row; /* Default direction */
     gap: 20px; /* Space between elements */
-    margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {
@@ -190,13 +189,11 @@ button {
         text-align: center; /* Center text */
         padding-left: 20px;
         padding-right: 20px;
-        margin-bottom: 20px;
     }
 
     .campaign-statistics .stats-image,
     .campaign-statistics .stats-text {
         max-width: 100%; /* Ensure full width on smaller screens */
-        margin-bottom: 20px;
     }
 }
 
@@ -597,7 +594,6 @@ button {
     .campaign-statistics, .campaign-objective, .brand-commitment {
         padding-left: 20px;
         padding-right: 20px;
-        margin-bottom: 20px;
     }
 
     .stats-container {

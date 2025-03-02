@@ -282,7 +282,7 @@ button {
     justify-content: space-between;
     gap: 60px;
     max-width: 2480px;
-    margin: 0, 10;
+    margin: 0, ;
     background: var(--white);
     padding: 40px;
     border-radius: 15px;
